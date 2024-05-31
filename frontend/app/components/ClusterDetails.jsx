@@ -10,9 +10,9 @@ const clusterDescriptions = {
 
 const ClusterDetails = ({ clusterId }) => {
   return (
-    <div>
-      <h2>Cluster {clusterId} Details</h2>
-      <p>{clusterDescriptions[clusterId]}</p>
+    <div className='mt-10'>
+      <h2 className='text-xl font-mono'>Customer belongs to the segment where customers are:</h2>
+      <p className='text-lime-200 font-sans italic text-2xl'>{clusterDescriptions[clusterId]}</p>
     </div>
   );
 };
